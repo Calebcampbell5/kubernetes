@@ -32,8 +32,8 @@ spec:
       nodeSelector:
         zone: us-east-2a
       volumes:
-        - name: vpro-db-data-pvc
-          persistantVolumeClaim:
+        - name: vpro-db-data
+          persistentVolumeClaim:
             claimName: vpro-db-data-pvc
 
       initContainers:
